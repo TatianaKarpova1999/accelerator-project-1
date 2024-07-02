@@ -10,22 +10,90 @@
 
   <body class="page-body">
 
-    <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
+    <!-- <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
     <svg>
       <use href="/__spritemap#sprite-user"></use>
-    </svg>
-    <!-- примеры требуемых атрибутов data-test="*" -->
-    <div data-test="hero">hero</div>
-    <div data-test="about">about</div>
-    <div data-test="price">price</div>
-    <div data-test="games">games</div>
-    <div data-test="juri">juri</div>
-    <div data-test="features">features</div>
-    <div data-test="offers">offers</div>
-    <div data-test="faq">faq</div>
-    <div data-test="reviews">reviews</div>
-    <div data-test="form">form</div>
-    <div data-test="footer">footer</div>
+    </svg> -->
+    <section class="hero" data-test="hero">
+      <header class="header">
+        <div class="header__wrapper">
+          <a class="header__logo" href="#">
+            <picture>
+              <source width="202" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop.svg">
+              <source width="174" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg">
+              <img class="main-header__icon" src="images/logo-mobile.svg" width="190" height="38" alt="Логотип Кэт энерджи">
+            </picture>
+          </a>
+          <a class="header__phone" href="tel:+88005555555">8 800 555-55-55</a>
+        </div>
+      </header>
+      <div class="content">
+        <div class="content__wrapper">
+          <h1 class="content__title">Фитнес центр</h1>
+          <h2 class="content__city">Омск</h2>
+          <ul class="content__services">
+            <li>Тренажёрный зал</li>
+            <li>Групповые занятия</li>
+            <li>Кардио-зона</li>
+          </ul>
+          <button class="content__button">Купить абонемент</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" data-test="about">
+      <div class="about__wrapper">
+        <h2 class="about__title">Тренажёрный зал</h2>
+        <h3 class="about__description">Просторный зал площадью 900 кв/м</h3>
+        <p class="about__info">Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья. Тренажёрный зал оснащён всем необходимым современным оборудованием для всех спортсменов.</p>
+        <picture>
+          <source width="660" height="400" type="image/webp" media="(min-width: 1440px)" srcset="images/index-image-desktop@1x.webp 1x, images/index-image-desktop@2x.webp 2x">
+          <source width="678" height="345" type="image/webp"  media="(min-width: 768px)" srcset="images/index-image-tablet@1x.webp 1x, images/index-image-tablet@2x.webp 2x">
+          <source width="320" height="280" type="image/webp" srcset="images/index-image-mobile@1x.webp 1x, images/index-image-mobile@2x.webp 2x">
+
+          <source width="660" height="400" type="image/png" media="(min-width: 1440px)" srcset="images/index-image-desktop@1x.png 1x, images/index-image-desktop@2x.png 2x">
+          <source width="678" height="345" type="image/png" media="(min-width: 768px)" srcset="images/index-image-tablet@1x.png 1x, images/index-image-tablet@2x.png 2x">
+          <img class="about__image" src="" srcset="" width="320" height="280" alt="Тренажёрный зал">
+        </picture>
+      </div>
+    </section>
+
+    <section class="price" data-test="price">
+      <div class="price__wrapper">
+        <h2 class="price__title">Абонементы</h2>
+        <button class="price__tab price__tab--current">1 месяц</button>
+        <button class="price__tab">6 месяцев</button>
+        <button class="price__tab">12 месяцев</button>
+        <ul class="price__list">
+          <li class="price__item card">
+            <h3 class="card__title">С тренером</h3>
+            <span class="card__badge">12 занятий</span>
+            <span class="card__price">5000</span>
+            <a class="card__button" href="#">Купить абонемент</a>
+          </li>
+          <li class="price__item card">
+            <h3 class="card__title">Дневной</h3>
+            <span class="card__badge">с 8:00 до 17:00</span>
+            <span class="card__price">1700</span>
+            <a class="card__button" href="#">Купить абонемент</a>
+          </li>
+          <li class="price__item card">
+            <h3 class="card__title">Полный день</h3>
+            <span class="card__badge">с 8:00 до 22:00</span>
+            <span class="card__price">2700</span>
+            <a class="card__button" href="#">Купить абонемент</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section data-test="games">games</section>
+    <section data-test="juri">juri</section>
+    <section data-test="features">features</section>
+    <section data-test="offers">offers</section>
+    <section data-test="faq">faq</section>
+    <section data-test="reviews">reviews</section>
+    <section data-test="form">form</section>
+    <section data-test="footer">footer</section>
     <script type="module" src="js/main.js"></script>
   </body>
 
