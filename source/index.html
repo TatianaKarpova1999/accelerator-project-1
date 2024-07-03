@@ -19,9 +19,9 @@
         <div class="header__wrapper">
           <a class="header__logo" href="#">
             <picture>
-              <source width="202" height="59" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop.svg">
-              <source width="174" height="50" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg">
-              <img class="main-header__icon" src="images/logo-mobile.svg" width="190" height="38" alt="Логотип Кэт энерджи">
+              <source width="130" height="26" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop.svg">
+              <source width="110" height="22" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg">
+              <img class="header__icon" src="images/logo-mobile.svg" width="100" height="20" alt="Логотип SUPERGYM">
             </picture>
           </a>
           <a class="header__phone" href="tel:+88005555555">8 800 555-55-55</a>
@@ -447,9 +447,139 @@
         </div>
       </div>
     </section>
-    <section data-test="reviews">reviews</section>
-    <section data-test="form">form</section>
-    <section data-test="footer">footer</section>
+
+    <section class="reviews" data-test="reviews">
+      <div class="reviews__wrapper">
+        <h2 class="reviews__title">Отзывы</h2>
+        <ul class="reviews__content reviews-card">
+          <li class="reviews-card__item">
+            <picture>
+              <source width="80" height="80" type="image/webp"  media="(min-width: 768px)" srcset="images/index-image-tablet@1x.webp 1x, images/index-image-tablet@2x.webp 2x">
+              <source width="68" height="68" type="image/webp" srcset="images/index-image-mobile@1x.webp 1x, images/index-image-mobile@2x.webp 2x">
+
+              <source width="80" height="80" type="image/png" media="(min-width: 768px)" srcset="images/index-image-tablet@1x.png 1x, images/index-image-tablet@2x.png 2x">
+              <img class="reviews-card__image" src="" srcset="" width="68" height="68" alt="Анна Орлова">
+            </picture>
+            <h3 class="reviews-card__title">Анна Орлова</h3>
+            <p class="reviews-card__text">«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+          </li>
+          <li class="reviews-card__item">
+            <picture>
+              <source width="80" height="80" type="image/webp"  media="(min-width: 768px)" srcset="images/index-image-tablet@1x.webp 1x, images/index-image-tablet@2x.webp 2x">
+              <source width="68" height="68" type="image/webp" srcset="images/index-image-mobile@1x.webp 1x, images/index-image-mobile@2x.webp 2x">
+
+              <source width="80" height="80" type="image/png" media="(min-width: 768px)" srcset="images/index-image-tablet@1x.png 1x, images/index-image-tablet@2x.png 2x">
+              <img class="reviews-card__image" src="" srcset="" width="68" height="68" alt="Анна Орлова">
+            </picture>
+            <h3 class="reviews-card__title">Анна Орлова</h3>
+            <p class="reviews-card__text">«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+          </li>
+          <li class="reviews-card__item">
+            <picture>
+              <source width="80" height="80" type="image/webp"  media="(min-width: 768px)" srcset="images/index-image-tablet@1x.webp 1x, images/index-image-tablet@2x.webp 2x">
+              <source width="68" height="68" type="image/webp" srcset="images/index-image-mobile@1x.webp 1x, images/index-image-mobile@2x.webp 2x">
+
+              <source width="80" height="80" type="image/png" media="(min-width: 768px)" srcset="images/index-image-tablet@1x.png 1x, images/index-image-tablet@2x.png 2x">
+              <img class="reviews-card__image" src="" srcset="" width="68" height="68" alt="Анна Орлова">
+            </picture>
+            <h3 class="reviews-card__title">Анна Орлова</h3>
+            <p class="reviews-card__text">«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="form" data-test="form">
+      <div class="form__wrapper">
+        <form class="form__content" action="https://echo.htmlacademy.ru/" method="post">
+          <h2 class="form__title">Бесплатное занятие</h2>
+          <ul class="form__list">
+            <li class="form__item">
+              <input class="field__input" type="text" id="name" name="name" placeholder="Имя" required>
+            </li>
+            <li class="form__item">
+              <input class="field__input" type="tel" id="phone" name="phone" placeholder="Телефон" required>
+            </li>
+          </ul>
+          <button class="form__button" type="submit">Отправить</button>
+        </form>
+
+        <div class="contacts">
+          <h2 class="contacts__title">Контакты</h2>
+          <ul class="contacts__list">
+            <li class="contacts__item">
+              <h3 class="contacts__item-title">Адрес:</h3>
+              <p class="contacts__text">г. Омск, ул. 60 лет Октября, 7</p>
+            </li>
+            <li class="contacts__item">
+              <h3 class="contacts__item-title">График работы:</h3>
+              <p class="contacts__text">Пн-Вс: с 8:00 до 22:00</p>
+            </li>
+            <li class="contacts__item">
+              <h3 class="contacts__item-title">Телефон:</h3>
+              <p class="contacts__text">8 800 555-55-55</p>
+            </li>
+            <li class="contacts__item">
+              <h3 class="contacts__item-title">Email:</h3>
+              <p class="contacts__text">oмск@supergym.ru</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer" data-test="footer">
+      <div class="footer__wrapper">
+        <picture>
+          <source width="130" height="26" type="image/svg+xml" media="(min-width: 1440px)" srcset="images/logo-desktop.svg">
+          <source width="110" height="22" type="image/svg+xml" media="(min-width: 768px)" srcset="images/logo-tablet.svg">
+          <img class="footer__icon" src="images/logo-mobile.svg" width="100" height="20" alt="Логотип SUPERGYM">
+        </picture>
+        <ul class="footer__nav">
+          <li class="footer__nav-item">
+            <a class="footer__link" href="#">Услуги</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__link" href="#">Абонементы</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__link" href="#">Акции</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__link" href="#">Тренеры</a>
+          </li>
+          <li class="footer__nav-item">
+            <a class="footer__link" href="#">Расписание</a>
+          </li>
+        </ul>
+
+        <ul class="footer__social-list social">
+          <li class="social__item">
+            <a class="social__link" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">ВКонтакте</span>
+              <svg class="social__icon" width="25" height="25">
+                <use href="./images/icons/stack.svg#vk"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">Одноклассники</span>
+              <svg class="social__icon" width="25" height="25">
+                <use href="./images/icons/stack.svg#youtube"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Reddit</span>
+              <svg class="social__icon" width="25" height="25">
+                <use href="./images/icons/stack.svg#telegram"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
     <script type="module" src="js/main.js"></script>
   </body>
 
