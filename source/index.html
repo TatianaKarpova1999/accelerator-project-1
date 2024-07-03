@@ -36,7 +36,7 @@
             <li>Групповые занятия</li>
             <li>Кардио-зона</li>
           </ul>
-          <button class="content__button">Купить абонемент</button>
+          <button class="content__button" type="button">Купить абонемент</button>
         </div>
       </div>
     </section>
@@ -61,9 +61,9 @@
     <section class="price" data-test="price">
       <div class="price__wrapper">
         <h2 class="price__title">Абонементы</h2>
-        <button class="price__tab price__tab--current">1 месяц</button>
-        <button class="price__tab">6 месяцев</button>
-        <button class="price__tab">12 месяцев</button>
+        <button class="price__tab price__tab--current" type="button">1 месяц</button>
+        <button class="price__tab" type="button">6 месяцев</button>
+        <button class="price__tab" type="button">12 месяцев</button>
         <ul class="price__list price-card">
           <li class="price-card__item">
             <h3 class="price-card__title">С тренером</h3>
@@ -312,8 +312,141 @@
       </div>
     </section>
 
-    <section data-test="offers">offers</section>
-    <section data-test="faq">faq</section>
+    <section class="offers" data-test="offers">
+      <div class="offers__wrapper">
+        <h2 class="offers__title">Акции</h2>
+        <div class="offers__content">
+          <dl class="features__info">
+            <dt>Год</dt>
+            <dd class="features__info-number">4999</dd>
+          </dl>
+          <p class="offers__text">Безлимитный абонемент в тренажёрный зал</p>
+          <a class="offers__link offers__link--main" href="#">Подробнее</a>
+        </div>
+
+        <ul class="offers__list">
+          <li class="offers__item">
+            <h3 class="offers__content-title">Месяц бесплатно</h3>
+            <p class="offers__content-text">Приведи друга, получи абонемент в подарок</p>
+            <a class="offers__link" href="#">Подробнее</a>
+          </li>
+
+          <li class="offers__item">
+            <h3 class="offers__content-title">Скидка 20%</h3>
+            <p class="offers__content-text">Корпоративный фитнес с командой</p>
+            <a class="offers__link" href="#">Подробнее</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section data-test="faq">
+      <div class="faq__wrapper">
+        <h2 class="faq__title">Вопросы и ответы</h2>
+        <div class="faq__tabs">
+          <button class="faq__tabs-item faq__tabs-item--current" type="button">Центр</button>
+          <button class="faq__tabs-item" type="button">Абонемент</button>
+          <button class="faq__tabs-item" type="button">Услуги</button>
+          <button class="faq__tabs-item" type="button">Правила</button>
+        </div>
+        <div class="faq__content faq__content--center">
+          <ul class="faq__list">
+            <li class="faq__item">
+              <h3 class="faq__item-title">Как стать членом фитнес-центра?</h3>
+              <p class="faq__text">При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.</p>
+              <button class="faq__button" type="button"></button>
+            </li>
+            <li class="faq__item">
+              <h3 class="faq__item-title">Где можно посмотреть расписание?</h3>
+              <p class="faq__text">Вы можете ознакомиться с расписание на стойке информации, на нашем официальном сайте. Так же есть возможность оформить подписку на наши новости и получать расписание и обновления на почту каждую неделю.</p>
+              <button class="faq__button" type="button"></button>
+            </li>
+            <li class="faq__item">
+              <h3 class="faq__item-title">Есть кулеры в центре? Предоставляются полотенца?</h3>
+              <p class="faq__text">При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.</p>
+              <button class="faq__button" type="button"></button>
+            </li>
+            <li class="faq__item">
+              <h3 class="faq__item-title">Сколько тренеров работает в клубе и какова их квалификация?</h3>
+              <p class="faq__text">При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.</p>
+              <button class="faq__button" type="button"></button>
+            </li>
+          </ul>
+        </div>
+
+        <div class="faq__content faq__content--subscription">
+          <ul class="faq__list">
+            <li class="faq__item">
+              <h3 class="faq__item-title">Занятия с тренером входят в абонемент?</h3>
+              <p class="faq__text">При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале всегда присутствует дежурный тренер, которому можно задать вопрос,  получить небольшую консультацию по тренажеру или технике выполнения упражнения.</p>
+              <button class="faq__button" type="button"></button>
+            </li>
+            <li class="faq__item">
+              <h3 class="faq__item-title">Можно ли заморозить абонемент?</h3>
+              <p class="faq__text">Вы можете ознакомиться с расписание на стойке информации, на нашем официальном сайте. Так же есть возможность оформить подписку на наши новости и получать расписание и обновления на почту каждую неделю.</p>
+              <button class="faq__button" type="button"></button>
+            </li>
+            <li class="faq__item">
+              <h3 class="faq__item-title">Есть ли лимит по посещениям тренажерного зала и групповых занятий?</h3>
+              <p class="faq__text">При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.</p>
+              <button class="faq__button" type="button"></button>
+            </li>
+            <li class="faq__item">
+              <h3 class="faq__item-title">Что такое семейный доступ и доступ для друзей?</h3>
+              <p class="faq__text">При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.</p>
+              <button class="faq__button" type="button"></button>
+            </li>
+          </ul>
+        </div>
+        <div class="faq__content faq__content--services">
+          <ul class="faq__list">
+            <li class="faq__item">
+              <h3 class="faq__item-title">Предлагает ли клуб услуги по консультированию по вопросам питания?</h3>
+              <p class="faq__text">Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист уточнит ваши данные, цели и предложит программу питания.</p>
+              <button class="faq__button" type="button"></button>
+            </li>
+            <li class="faq__item">
+              <h3 class="faq__item-title">Проводятся ли в клубе какие-либо мероприятия или соревнования?</h3>
+              <p class="faq__text">Вы можете ознакомиться с расписание на стойке информации, на нашем официальном сайте. Так же есть возможность оформить подписку на наши новости и получать расписание и обновления на почту каждую неделю.</p>
+              <button class="faq__button" type="button"></button>
+            </li>
+            <li class="faq__item">
+              <h3 class="faq__item-title">Можно ли приобрести в центре спортивное питание?</h3>
+              <p class="faq__text">При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.</p>
+              <button class="faq__button" type="button"></button>
+            </li>
+            <li class="faq__item">
+              <h3 class="faq__item-title">Есть ли в центре детская комната?</h3>
+              <p class="faq__text">При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.</p>
+              <button class="faq__button" type="button"></button>
+            </li>
+          </ul>
+        </div>
+        <div class="faq__content faq__content--rules">
+          <ul class="faq__list">
+            <li class="faq__item">
+              <h3 class="faq__item-title">Есть в фитнес-центре дресс-код?</h3>
+              <p class="faq__text">Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду. Верхняя и нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты, кроссовки). В целях безопасности, запрещается тренироваться босиком, в пляжных или домашних тапочках и т. п., исключения составляют специальные классы (например, йога, пилатес). </p>
+              <button class="faq__button" type="button"></button>
+            </li>
+            <li class="faq__item">
+              <h3 class="faq__item-title">Можно ли приводить с собой детей на тренировки?</h3>
+              <p class="faq__text">Вы можете ознакомиться с расписание на стойке информации, на нашем официальном сайте. Так же есть возможность оформить подписку на наши новости и получать расписание и обновления на почту каждую неделю.</p>
+              <button class="faq__button" type="button"></button>
+            </li>
+            <li class="faq__item">
+              <h3 class="faq__item-title">Какие дополнительные правила посещения центра?</h3>
+              <p class="faq__text">При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.</p>
+              <button class="faq__button" type="button"></button>
+            </li>
+            <li class="faq__item">
+              <h3 class="faq__item-title">Нужна ли медицинская справка для посещения залов и бассейна?</h3>
+              <p class="faq__text">При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.</p>
+              <button class="faq__button" type="button"></button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
     <section data-test="reviews">reviews</section>
     <section data-test="form">form</section>
     <section data-test="footer">footer</section>
