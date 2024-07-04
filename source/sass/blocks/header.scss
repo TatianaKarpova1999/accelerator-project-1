@@ -1,0 +1,21 @@
+.header__wrapper {
+  padding: 16px 15px;
+  display: flex;
+  max-width: 320px;
+  margin: auto;
+  box-sizing: border-box;
+}
+
+.header__logo {
+  width: 100px;
+  height: 20px;
+}
+
+.header__phone {
+  font-family: $secondary-font;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 22px;
+  color: $basic-white;
+  margin-left: auto;
+}
