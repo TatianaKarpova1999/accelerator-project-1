@@ -25,6 +25,13 @@
   line-height: 32px;
 }
 
+@mixin h3 {
+  font-family: $secondary-font;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+}
+
 // Кнопки
 @mixin button {
   font-family: $secondary-font;

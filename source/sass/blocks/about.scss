@@ -1,0 +1,127 @@
+.about__wrapper {
+  padding: 40px 0;
+
+  p {
+    font-family: $secondary-font;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+    padding: 0 15px;
+    margin: 0;
+    margin-bottom: 36px;
+  }
+}
+
+.about__title {
+  @include h2;
+
+  color: $primary-color;
+  padding: 0 15px;
+  margin: 0;
+  margin-bottom: 12px;
+}
+
+.about__description {
+  @include h3;
+
+  padding: 0 15px;
+  margin: 0;
+  margin-bottom: 36px;
+}
+
+.about__image {
+  margin-bottom: 32px;
+}
+
+.about__video {
+  background-color: rgba(20, 54, 122, 0.5);
+  max-height: 170px;
+  position: relative;
+}
+
+.about__preview {
+  z-index: -2;
+  position: relative;
+}
+
+.about__iframe {
+  display: none;
+}
+
+.about__button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  background: $button-gradient;
+
+  &::after {
+    content: "";
+    position: absolute;
+    mask-image: url("../../img/sprite/play.svg");
+    mask-size: 12px 12px;
+    width: 12px;
+    height: 12px;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background-size: 12px 12px;
+    background-color: $basic-white;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    border: 2px solid rgba(237, 2, 51, 0.2);
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  &:hover,
+  &:active,
+  &:disabled {
+    background: none;
+    background-color: $basic-white;
+  }
+
+  &:hover::before {
+    border-color: rgba(16, 38, 84, 0.6);
+  }
+
+  &:not([disabled]):hover::after {
+    background-color: rgba(16, 38, 84, 0.6);
+  }
+
+  &:focus {
+    outline: none;
+    background: none;
+    background-color: $basic-grey;
+  }
+
+  &:not([disabled]):focus::after,
+  &:not([disabled]):active::after,
+  &:disabled::after {
+    background-color: $primary-color;
+  }
+
+  &:focus::before,
+  &:active::before,
+  &:disabled::before {
+    border-color: $primary-color;
+  }
+
+  &:disabled,
+  &:disabled::before {
+    opacity: 40%;
+    cursor: default;
+  }
+}

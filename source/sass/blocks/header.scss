@@ -4,6 +4,7 @@
   max-width: 320px;
   margin: auto;
   box-sizing: border-box;
+  align-items: center;
 }
 
 .header__logo {
@@ -18,4 +19,9 @@
   line-height: 22px;
   color: $basic-white;
   margin-left: auto;
+}
+
+.header__icon {
+  width: 100px;
+  height: 20px;
 }
