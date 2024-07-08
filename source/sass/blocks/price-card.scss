@@ -1,0 +1,82 @@
+.price-card {
+  padding: 0 42px;
+  padding-top: 50px;
+  background-color: $basic-white;
+  margin-bottom: 35px;
+  display: flex;
+  flex-direction: column;
+  width: 290px;
+  box-sizing: border-box;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.price-card__title {
+  font-family: $secondary-font;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 22px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 18px;
+}
+
+.price-card__badge {
+  font-family: $secondary-font;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  margin-bottom: 66px;
+}
+
+.price-card__price {
+  font-family: $secondary-font;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 72px;
+  text-align: center;
+  color: $secondary-color;
+  margin-bottom: 18px;
+}
+
+.price-card__button {
+  @include button;
+
+  text-decoration: none;
+  color: $primary-color;
+  padding: 25px;
+  text-align: center;
+  margin-bottom: 50px;
+  box-shadow: 0 0 0 2px $primary-color;
+  border: none;
+
+  &:not([aria-disabled="true"]):hover {
+    color: $basic-white;
+    box-shadow: none;
+    background: $button-gradient;
+  }
+
+  &:not([aria-disabled="true"]):focus {
+    box-shadow: 0 0 0 2px $basic-black;
+    background: linear-gradient(to left, rgb(0, 62, 183, 0.8) 0%, rgb(237, 2, 51, 0.8) 100%);
+    outline: none;
+    color: $basic-white;
+  }
+
+  &:not([aria-disabled="true"]):active {
+    color: rgb(255, 255, 255, 0.7);
+    box-shadow: none;
+    background: $button-gradient;
+  }
+
+  &[aria-disabled="true"] {
+    color: rgb(16, 38, 84, 0.3);
+    box-shadow: 0 0 0 2px rgb(16, 38, 84, 0.3);
+    background-color: transparent;
+    cursor: default;
+    pointer-events: none;
+  }
+}

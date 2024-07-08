@@ -1,7 +1,6 @@
 .hero-content__wrapper {
   padding: 0 15px;
   padding-top: 48px;
-  padding-bottom: 32px;
   max-width: 320px;
   margin: 0 auto;
   box-sizing: border-box;
@@ -60,6 +59,7 @@
   color: $basic-white;
   width: 100%;
   padding: 22px;
+  margin-bottom: 32px;
 
   &:not([disabled]):hover {
     background-color: $basic-white;

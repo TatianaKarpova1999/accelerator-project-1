@@ -1,5 +1,7 @@
 .about__wrapper {
-  padding: 40px 0;
+  padding-top: 40px;
+  max-width: 320px;
+  margin: 0 auto;
 
   p {
     font-family: $secondary-font;
@@ -37,6 +39,7 @@
   background-color: rgba(20, 54, 122, 0.5);
   max-height: 170px;
   position: relative;
+  margin-bottom: 40px;
 }
 
 .about__preview {

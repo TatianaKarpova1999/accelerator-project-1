@@ -8,7 +8,8 @@
     <link rel="preload" href="fonts/AlumniSans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/RobotoCondensed.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="icon" href="favicon.ico">
-    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link rel="icon" href="favicons/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="favicons/180.png">
     <link rel="stylesheet" href="sass/style.scss">
   </head>
 
@@ -76,23 +77,25 @@
     <section class="price" data-test="price">
       <div class="price__wrapper">
         <h2 class="price__title">Абонементы</h2>
-        <button class="price__tab price__tab--current" type="button">1 месяц</button>
-        <button class="price__tab" type="button">6 месяцев</button>
-        <button class="price__tab" type="button">12 месяцев</button>
-        <ul class="price__list price-card">
-          <li class="price-card__item">
+        <div class="price__tabs">
+          <button class="price__tab price__tab--current" type="button">1 месяц</button>
+          <button class="price__tab" type="button">6 месяцев</button>
+          <button class="price__tab" type="button">12 месяцев</button>
+        </div>
+        <ul class="price__list">
+          <li class="price__item price-card">
             <h3 class="price-card__title">С тренером</h3>
             <span class="price-card__badge">12 занятий</span>
             <span class="price-card__price">5000</span>
             <a class="price-card__button" href="#">Купить абонемент</a>
           </li>
-          <li class="price-card__item">
+          <li class="price__item price-card">
             <h3 class="price-card__title">Дневной</h3>
             <span class="price-card__badge">с 8:00 до 17:00</span>
             <span class="price-card__price">1700</span>
             <a class="price-card__button" href="#">Купить абонемент</a>
           </li>
-          <li class="price-card__item">
+          <li class="price__item price-card">
             <h3 class="price-card__title">Полный день</h3>
             <span class="price-card__badge">с 8:00 до 22:00</span>
             <span class="price-card__price">2700</span>
