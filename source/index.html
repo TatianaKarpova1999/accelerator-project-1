@@ -106,21 +106,32 @@
     </section>
     <article class="games" data-test="games">
       <div class="games__wrapper">
-        <h1 class="games__title">Super games</h1>
-        <p class="games__description">Ежегодные соревнования по CrossFit</p>
-        <dl class="games__info">
-          <div class="games__info-item">
-            <dt>Дата</dt>
-            <dd class="games__info-number">7</dd>
-            <dd class="games__info-date">Марта 2019</dd>
-          </div>
+        <div class="games__content">
+          <h1 class="games__title">Super games</h1>
+          <dl class="games__info">
+            <div class="games__info-item">
+              <dt>Дата</dt>
+              <dd class="games__info-number">7</dd>
+              <dd class="games__info-date">Марта 2019</dd>
+            </div>
 
-          <div class="games__info-item">
-            <dt>Время</dt>
-            <dd class="games__info-number">12:00</dd>
-          </div>
-        </dl>
-        <a class="games__button" href="#">Заполнить заявку</a>
+            <div class="games__info-item">
+              <dt>Время</dt>
+              <dd class="games__info-number">12:00</dd>
+            </div>
+          </dl>
+          <p class="games__description">Ежегодные соревнования по CrossFit</p>
+          <a class="games__button" href="#">Заполнить заявку</a>
+        </div>
+        <picture>
+          <source width="660" height="500" type="image/webp" media="(min-width: 1366px)" srcset="img/games-desktop@1x.webp 1x, img/games-desktop@2x.webp 2x">
+          <source width="378" height="348" type="image/webp"  media="(min-width: 768px)" srcset="img/games-tablet@1x.webp 1x, img/games-tablet@2x.webp 2x">
+          <source width="290" height="290" type="image/webp" srcset="img/games-mobile@1x.webp 1x, img/games-mobile@2x.webp 2x">
+
+          <source width="660" height="500" type="img/png" media="(min-width: 1366px)" srcset="img/games-desktop@1x.png 1x, images/games-desktop@2x.png 2x">
+          <source width="378" height="348" type="img/png" media="(min-width: 768px)" srcset="img/games-tablet@1x.png 1x, images/games-tablet@2x.png 2x">
+          <img class="games__photo" src="img/games-mobile@1x.jpg" srcset="img/games-mobile@2x.jpg" width="290" height="290" alt="Тренажёрный зал">
+        </picture>
       </div>
     </article>
 
