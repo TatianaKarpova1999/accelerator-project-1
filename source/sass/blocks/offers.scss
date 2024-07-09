@@ -49,10 +49,6 @@
   }
 }
 
-.offers__link-container {
-  padding: 9px;
-}
-
 .offers__link {
   text-decoration: none;
   font-size: 14px;
@@ -107,7 +103,7 @@
 .offers__list {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 0 15px;
 }
 
 .offers__item {
