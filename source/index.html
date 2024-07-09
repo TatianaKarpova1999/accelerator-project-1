@@ -372,25 +372,40 @@
       <div class="offers__wrapper">
         <h2 class="offers__title">Акции</h2>
         <div class="offers__content">
-          <dl class="features__info">
+          <dl>
             <dt>Год</dt>
-            <dd class="features__info-number">4999</dd>
+            <dd>4999</dd>
           </dl>
-          <p class="offers__text">Безлимитный абонемент в тренажёрный зал</p>
-          <a class="offers__link offers__link--main" href="#">Подробнее</a>
+          <p>Безлимитный абонемент в тренажёрный зал</p>
+          <div class="offers__link-container">
+            <a class="offers__link offers__link--main" href="#">Подробнее</a>
+          </div>
         </div>
+        <picture>
+          <source width="560" height="460" type="image/webp" media="(min-width: 1366px)" srcset="img/offers-desktop@1x.webp 1x, img/offers-desktop@2x.webp 2x">
+          <source width="678" height="462" type="image/webp"  media="(min-width: 768px)" srcset="img/offers-tablet@1x.webp 1x, img/offers-tablet@2x.webp 2x">
+          <source width="320" height="360" type="image/webp" srcset="img/offers-mobile@1x.webp 1x, img/offers-mobile@2x.webp 2x">
+
+          <source width="560" height="460" type="img/png" media="(min-width: 1366px)" srcset="img/offers-desktop@1x.png 1x, images/offers-desktop@2x.png 2x">
+          <source width="678" height="462" type="img/png" media="(min-width: 768px)" srcset="img/offers-tablet@1x.png 1x, images/offers-tablet@2x.png 2x">
+          <img class="offers__photo" src="img/offers-mobile@1x.jpg" srcset="img/offers-mobile@2x.jpg" width="320" height="360" alt="Тренажёрный зал">
+        </picture>
 
         <ul class="offers__list">
           <li class="offers__item">
-            <h3 class="offers__content-title">Месяц бесплатно</h3>
-            <p class="offers__content-text">Приведи друга, получи абонемент в подарок</p>
-            <a class="offers__link" href="#">Подробнее</a>
+            <h3>Месяц бесплатно</h3>
+            <p>Приведи друга, получи абонемент в подарок</p>
+            <div class="offers__link-container">
+              <a class="offers__link" href="#">Подробнее</a>
+            </div>
           </li>
 
           <li class="offers__item">
-            <h3 class="offers__content-title">Скидка 20%</h3>
-            <p class="offers__content-text">Корпоративный фитнес с командой</p>
-            <a class="offers__link" href="#">Подробнее</a>
+            <h3>Скидка 20%</h3>
+            <p>Корпоративный фитнес с командой</p>
+            <div class="offers__link-container">
+              <a class="offers__link" href="#">Подробнее</a>
+            </div>
           </li>
         </ul>
       </div>
