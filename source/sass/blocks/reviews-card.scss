@@ -1,0 +1,33 @@
+.reviews-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $button-blue;
+  padding: 30px 25px;
+  box-shadow: 0 0 40px 0 rgba(28, 51, 116, 0.2);
+  font-family: $secondary-font;
+  color: $basic-white;
+  text-align: center;
+  min-width: 240px;
+  box-sizing: border-box;
+
+  img {
+    margin-bottom: 5px;
+  }
+
+  h3 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    margin: 0;
+    margin-bottom: 16px;
+  }
+
+  p {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+    margin: 0;
+  }
+}
+

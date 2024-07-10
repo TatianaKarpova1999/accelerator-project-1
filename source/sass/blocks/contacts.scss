@@ -1,0 +1,44 @@
+.contacts {
+  padding: 40px 15px;
+  max-width: 320px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  font-family: $secondary-font;
+}
+
+.contacts__title {
+  @include h2;
+
+  text-align: left;
+  color: $primary-color;
+  margin: 0;
+  margin-bottom: 42px;
+}
+
+.contacts__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contacts__item {
+  margin-bottom: 28px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.contacts__item-title {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  margin: 0;
+  margin-bottom: 12px;
+}
+
+.contacts__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
