@@ -1,0 +1,53 @@
+.social {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 115px;
+}
+
+.social__item {
+  width: 25px;
+  height: 25px;
+}
+
+.social__icon {
+  fill: #030a1a;
+}
+
+.social__link {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: $basic-white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    background-color: #74819c;
+  }
+
+  &:not([aria-disabled="true"]):focus {
+    background-color: $secondary-color;
+    outline: none;
+  }
+
+  &:active {
+    background-color: $primary-color;
+  }
+
+  &:hover .social__icon,
+  &:not([aria-disabled="true"]):focus .social__icon,
+  &:active .social__icon {
+    fill: $basic-white;
+  }
+
+  &[aria-disabled="true"] {
+    opacity: 30%;
+    cursor: default;
+    pointer-events: none;
+    outline: none;
+  }
+}
