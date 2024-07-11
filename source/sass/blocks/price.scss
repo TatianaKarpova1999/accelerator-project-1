@@ -1,9 +1,17 @@
+.price {
+  background-color: $background-secondary;
+}
+
 .price__wrapper {
   padding: 40px 15px;
-  background-color: $background-secondary;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  max-width: 320px;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 45px;
+    max-width: 768px;
+  }
 }
 
 .price__title {
@@ -12,16 +20,25 @@
   text-align: center;
   margin: 0;
   margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 35px;
+  }
 }
 
 .price__tabs {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 45px;
-  max-width: 290px;
-  box-sizing: border-box;
   position: relative;
   margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 310px;
+    margin: 0 auto;
+    margin-bottom: 55px;
+    column-gap: 44px;
+  }
 
   &::before {
     content: "";
@@ -44,6 +61,12 @@
   padding: 0;
   cursor: pointer;
 
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 18px;
+  }
+
   &--current {
     color: $primary-color;
     position: relative;
@@ -65,4 +88,13 @@
   margin: 0;
   padding: 0;
   max-width: 290px;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 380px;
+    margin: 0 auto;
+    gap: 40px;
+  }
 }

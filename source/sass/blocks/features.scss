@@ -1,7 +1,12 @@
+.features {
+  background-color: $background-secondary;
+}
 
 .features__wrapper {
-  padding: 40px 0;
-  background-color: $background-secondary;
+  padding: 40px 15px;
+  max-width: 320px;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .features__title {
@@ -49,12 +54,15 @@
     line-height: 64px;
     background: linear-gradient(128deg, #d10a42 0%, #0041ca 35%);
     background-clip: text;
-    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   span {
+    font-weight: 400;
     font-size: 14px;
     line-height: 20px;
     color: #2e35ac;
