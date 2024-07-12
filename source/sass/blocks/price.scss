@@ -74,6 +74,7 @@
   color: rgba(16, 38, 84, 0.5);
   padding: 0;
   cursor: pointer;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     margin: 0 auto;
@@ -81,19 +82,58 @@
     line-height: 18px;
   }
 
-  &--current {
-    color: $primary-color;
-    position: relative;
-  }
-
-  &--current::before {
+  &::before {
     content: "";
     position: absolute;
     width: 100%;
     height: 2px;
-    background-color: $tabs-color;
     top: 24px;
     left: 0;
+  }
+
+  &:hover {
+    color: rgba(16, 38, 84, 0.7);
+  }
+
+  &:hover::before {
+    background-color: #787878;
+  }
+
+  &:focus {
+    color: $primary-color;
+    outline: none;
+  }
+
+  &:focus::before {
+    background-color: $primary-color;
+  }
+
+  &:active {
+    color: $primary-color;
+  }
+
+  &:active::before {
+    background-color: $tabs-color;
+  }
+
+  &:disabled {
+    color: rgb(16, 38, 84, 0.3);
+    cursor: default;
+    pointer-events: none;
+  }
+
+  &:disabled::before {
+    background-color: rgb(16, 38, 84, 0.3);
+  }
+
+  &--current {
+    color: $primary-color;
+    position: relative;
+    pointer-events: none;
+  }
+
+  &--current::before {
+    background-color: $tabs-color;
   }
 }
 
