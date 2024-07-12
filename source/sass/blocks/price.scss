@@ -11,6 +11,20 @@
   @media (min-width: $tablet-width) {
     padding: 60px 45px;
     max-width: 768px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url("../../img/disk-tablet@1x.png");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      width: 275px;
+      height: 328px;
+      transform: rotate(-25deg);
+      bottom: 0;
+      right: -16px;
+    }
   }
 }
 
