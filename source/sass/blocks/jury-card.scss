@@ -1,4 +1,4 @@
-.juri-card {
+.jury-card {
   position: relative;
   margin: 0 auto;
   max-width: 260px;
@@ -10,23 +10,23 @@
     max-height: 300px;
   }
 
-  &:hover .juri-card__container {
+  &:hover .jury-card__container {
     z-index: -1;
     position: relative;
     outline: none;
   }
 
-  &:hover .juri-card__name {
+  &:hover .jury-card__name {
     display: none;
     outline: none;
   }
 
-  &:hover .juri-card__info {
+  &:hover .jury-card__info {
     display: flex;
   }
 }
 
-.juri-card__name {
+.jury-card__name {
   position: absolute;
   font-family: $secondary-font;
   font-weight: 400;
@@ -42,7 +42,7 @@
   box-sizing: border-box;
 }
 
-.juri-card__info {
+.jury-card__info {
   display: none;
   position: absolute;
   top: 0;
@@ -52,7 +52,7 @@
   align-items: center;
 }
 
-.juri-card__title {
+.jury-card__title {
   font-family: $secondary-font;
   font-weight: 400;
   font-size: 22px;
@@ -63,7 +63,7 @@
   margin-bottom: 8px;
 }
 
-.juri-card__badge {
+.jury-card__badge {
   font-family: $secondary-font;
   font-weight: 300;
   font-size: 16px;
@@ -73,14 +73,14 @@
   margin-bottom: 33px;
 }
 
-.juri-card__list {
+.jury-card__list {
   margin: 0;
   padding: 0;
   list-style-type: disc;
   margin-left: 14px;
 }
 
-.juri-card__item {
+.jury-card__item {
   font-family: $secondary-font;
   color: $basic-white;
   font-weight: 400;

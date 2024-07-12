@@ -168,5 +168,6 @@
   &:disabled::before {
     opacity: 40%;
     cursor: default;
+    pointer-events: none;
   }
 }
