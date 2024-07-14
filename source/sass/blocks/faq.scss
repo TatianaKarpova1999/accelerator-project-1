@@ -1,6 +1,17 @@
-.faq__wrapper {
+.faq {
   background-color: $background-secondary;
+}
+
+.faq__wrapper {
   padding: 70px 15px;
+  max-width: 320px;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    max-width: 768px;
+    padding: 60px 45px;
+  }
 }
 
 .faq__content {
@@ -23,15 +34,22 @@
   text-align: center;
   margin: 0;
   margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 45px;
+  }
 }
 
 .faq__tabs {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
-  max-width: 290px;
-  margin: 0 auto;
   margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 45px;
+  }
 }
 
 .faq__tabs-item {
@@ -69,8 +87,7 @@
 .faq__list {
   list-style-type: none;
   padding: 0;
-  max-width: 290px;
-  margin: 0 auto;
+  margin: 0;
 }
 
 .faq__item {
@@ -81,6 +98,11 @@
   column-gap: 22px;
   border-top: 1px solid #74819c;
 
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 559px 52px;
+    column-gap: 78px;
+  }
+
   h3 {
     font-weight: 400;
     font-size: 20px;
@@ -88,6 +110,11 @@
     color: $primary-color;
     margin: 0;
     margin-bottom: 20px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 22px;
+      line-height: 22px;
+    }
   }
 
   p {
@@ -97,6 +124,11 @@
     margin: 0;
     grid-column: 1;
     display: none;
+
+    @media (min-width: $tablet-width) {
+      font-size: 18px;
+      line-height: 24px;
+    }
   }
 
   &:last-child {
@@ -120,6 +152,11 @@
   position: relative;
   cursor: pointer;
 
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
+
   &::before,
   &::after {
     content: "";
@@ -129,11 +166,19 @@
     background-color: $button-blue;
     left: 50%;
     transform: translateX(-50%);
+
+    @media (min-width: $tablet-width) {
+      width: 20px;
+    }
   }
 
   &::after {
     transform: rotate(90deg);
     left: 8px;
+
+    @media (min-width: $tablet-width) {
+      left: 10px;
+    }
   }
 
   &--current::before {

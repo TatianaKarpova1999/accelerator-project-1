@@ -97,6 +97,10 @@
     outline: none;
     border: 1px solid $button-blue;
     padding: 9px;
+
+    @media (min-width: $tablet-width) {
+      margin-left: -10px;
+    }
   }
 
   &:active {
@@ -117,10 +121,6 @@
       outline: none;
       border: 1px solid $basic-white;
       padding: 9px;
-
-      @media (min-width: $tablet-width) {
-        margin-left: -10px;
-      }
     }
   }
 
