@@ -4,7 +4,13 @@
   padding: 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  max-width: 115px;
+  width: 115px;
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 105px;
+    gap: 15px;
+  }
 }
 
 .social__item {

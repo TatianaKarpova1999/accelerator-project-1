@@ -8,6 +8,15 @@
   padding: 70px 15px;
   margin: 0 auto;
   box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    max-width: 768px;
+    padding: 60px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .form__title {
@@ -17,16 +26,32 @@
   color: $basic-white;
   margin: 0;
   margin-bottom: 36px;
+
+  @media (min-width: $tablet-width) {
+    text-align: center;
+  }
 }
 
 .form__list {
   list-style-type: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    width: 440px;
+    margin-bottom: 36px;
+  }
 }
 
 .form__item {
   margin-bottom: 36px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .form__input {
@@ -87,6 +112,11 @@
   width: 100%;
   color: $basic-white;
   padding: 22px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 440px;
+    margin-bottom: 10px;
+  }
 
   &:not([disabled]):hover {
     background-color: $basic-white;
