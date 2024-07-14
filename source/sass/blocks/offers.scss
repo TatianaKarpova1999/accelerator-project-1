@@ -2,6 +2,12 @@
   max-width: 320px;
   margin: 0 auto;
   padding: 40px 0;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    max-width: 768px;
+    padding: 60px 45px;
+  }
 }
 
 .offers__title {
@@ -10,6 +16,10 @@
   text-align: center;
   margin: 0;
   margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 35px;
+  }
 }
 
 .offers__content {
@@ -23,15 +33,32 @@
   text-align: center;
   padding: 30px;
 
+  @media (min-width: $tablet-width) {
+    padding: 40px 25px;
+    padding-bottom: 46px;
+    max-width: 278px;
+    box-sizing: border-box;
+    text-align: left;
+    align-items: start;
+  }
+
   dl {
     margin: 0;
     font-size: 22px;
     line-height: 22px;
     margin-bottom: 28px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 40px;
+    }
   }
 
   dt {
     margin-bottom: 9px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 20px;
+    }
   }
 
   dd {
@@ -46,6 +73,10 @@
     line-height: 20px;
     margin: 0;
     margin-bottom: 28px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 160px;
+    }
   }
 }
 
@@ -86,6 +117,10 @@
       outline: none;
       border: 1px solid $basic-white;
       padding: 9px;
+
+      @media (min-width: $tablet-width) {
+        margin-left: -10px;
+      }
     }
   }
 
@@ -98,12 +133,24 @@
 
 .offers__photo {
   margin-bottom: 40px;
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .offers__list {
   list-style-type: none;
   margin: 0;
   padding: 0 15px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0;
+    gap: 30px;
+  }
 }
 
 .offers__item {
@@ -116,12 +163,26 @@
   border-image-slice: 1;
   margin-bottom: 30px;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
   h3 {
     font-weight: 700;
     font-size: 22px;
     line-height: 22px;
     margin: 0;
     margin-bottom: 20px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 26px;
+      line-height: 26px;
+      margin-bottom: 10px;
+    }
   }
 
   p {
@@ -130,9 +191,22 @@
     line-height: 22px;
     margin: 0;
     margin-bottom: 18px;
+
+    @media (min-width: $tablet-width) {
+      font-size: 16px;
+      line-height: 24px;
+      margin-bottom: 25px;
+    }
   }
 
   &:last-child {
     margin-bottom: 0;
+  }
+}
+
+.offers__container {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    margin-bottom: 35px;
   }
 }
