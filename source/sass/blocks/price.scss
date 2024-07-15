@@ -26,6 +26,17 @@
       right: -16px;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      right: -62px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 100px 103px;
+    max-width: 1366px;
+  }
 }
 
 .price__title {
@@ -54,6 +65,11 @@
     column-gap: 44px;
   }
 
+  @media (min-width: $desktop-width) {
+    max-width: 350px;
+    column-gap: 50px;
+  }
+
   &::before {
     content: "";
     position: absolute;
@@ -80,6 +96,11 @@
     margin: 0 auto;
     font-size: 18px;
     line-height: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 20px;
   }
 
   &::before {
@@ -150,5 +171,11 @@
     max-width: 380px;
     margin: 0 auto;
     gap: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1160px;
   }
 }

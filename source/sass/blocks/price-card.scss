@@ -47,6 +47,12 @@
     line-height: 24px;
     margin-bottom: 22px;
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: 26px;
+    line-height: 26px;
+    margin-bottom: 17px;
+  }
 }
 
 .price-card__badge {
@@ -61,6 +67,10 @@
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 82px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 77px;
   }
 }
 
@@ -79,6 +89,10 @@
     font-size: 60px;
     line-height: 90px;
     margin-bottom: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 17px;
   }
 
   &::before {
