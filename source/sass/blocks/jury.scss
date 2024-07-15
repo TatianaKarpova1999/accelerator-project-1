@@ -9,6 +9,11 @@
     padding-bottom: 60px;
     max-width: 768px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 100px 48px;
+    max-width: 1366px;
+  }
 }
 
 .jury__title {
@@ -38,6 +43,10 @@
 
   @media (min-width: $tablet-width) {
     width: 560px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1160px;
   }
 }
 
@@ -76,6 +85,18 @@
       height: 34px;
       top: 50%;
       padding: 0;
+    }
+
+    &--prev {
+      @media (min-width: $desktop-width) {
+        margin-left: -20px;
+      }
+    }
+
+    &--next {
+      @media (min-width: $desktop-width) {
+        margin-right: -20px;
+      }
     }
 
     &--prev::before {
