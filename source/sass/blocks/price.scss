@@ -28,14 +28,12 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding: 100px 103px;
+    max-width: 1366px;
+
     &::before {
       right: -62px;
     }
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 100px 103px;
-    max-width: 1366px;
   }
 }
 
