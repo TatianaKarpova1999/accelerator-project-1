@@ -11,6 +11,13 @@
     flex-wrap: wrap;
     box-sizing: border-box;
   }
+
+  @media (min-width: $desktop-width) {
+    max-width: 1366px;
+    padding: 0 175px;
+    padding-top: 30px;
+    padding-bottom: 120px;
+  }
 }
 
 .hero-content__wrapper {
@@ -23,6 +30,11 @@
     padding: 0;
     max-width: 324px;
     margin-top: 31px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 385px;
+    margin-left: 75px;
   }
 }
 
@@ -62,6 +74,10 @@
   grid-column: 2;
   text-align: right;
   margin-bottom: 14px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 40px;
+  }
 }
 
 .hero-content__services {
@@ -94,6 +110,10 @@
   @media (min-width: $tablet-width) {
     max-width: 185px;
     grid-column: 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 270px;
   }
 
   color: $basic-white;
