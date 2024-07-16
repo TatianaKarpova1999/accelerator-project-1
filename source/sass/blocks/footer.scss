@@ -15,6 +15,13 @@
     grid-template-columns: repeat(3, 1fr);
     column-gap: 35px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 40px 103px;
+    max-width: 1366px;
+    grid-template-columns: 130px auto 95px;
+    column-gap: 146px;
+  }
 }
 
 .footer__nav {
@@ -30,6 +37,12 @@
   @media (min-width: $tablet-width) {
     column-gap: 19px;
     width: 393px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    column-gap: 82px;
+    width: 642px;
   }
 }
 
@@ -87,5 +100,11 @@
   @media (min-width: $tablet-width) {
     width: 110px;
     height: 22px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 130px;
+    height: 26px;
   }
 }

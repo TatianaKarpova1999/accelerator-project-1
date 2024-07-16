@@ -11,6 +11,11 @@
     width: 105px;
     gap: 15px;
   }
+
+  @media (min-width: $desktop-width) {
+    gap: 10px;
+    width: 95px;
+  }
 }
 
 .social__item {
