@@ -4,3 +4,4 @@
 // import 'swiper/css';
 import './slider';
 import './reviews';
+import './about';

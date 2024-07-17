@@ -138,6 +138,19 @@
 
 .about__iframe {
   display: none;
+  width: 320px;
+  height: 170px;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    width: 270px;
+    height: 170px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 360px;
+    height: 230px;
+  }
 }
 
 .about__button {
