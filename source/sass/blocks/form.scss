@@ -1,3 +1,15 @@
+.form {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: $primary-color;
+    width: 50%;
+    height: 100%;
+    z-index: -1;
+  }
+}
 
 .form__wrapper {
   @media (min-width: $desktop-width) {
