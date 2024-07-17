@@ -5,3 +5,4 @@
 import './slider';
 import './reviews';
 import './about';
+import './price';
