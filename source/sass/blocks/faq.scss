@@ -71,7 +71,7 @@
   }
 }
 
-.faq__tabs-item {
+.faq__tab {
   font-family: $secondary-font;
   font-weight: 400;
   font-size: 16px;
@@ -166,10 +166,6 @@
   &:last-child {
     border-bottom: 1px solid #74819c;
   }
-
-  &--current p {
-    display: block;
-  }
 }
 
 .faq__button {
@@ -189,8 +185,8 @@
     height: 40px;
   }
 
-  &::before,
-  &::after {
+  &--closed::before,
+  &--closed::after {
     content: "";
     position: absolute;
     width: 13px;
@@ -204,7 +200,7 @@
     }
   }
 
-  &::after {
+  &--closed::after {
     transform: rotate(90deg);
     left: 8px;
 
@@ -213,11 +209,21 @@
     }
   }
 
-  &--current::before {
+  &--opened::before {
+    content: "";
+    position: absolute;
+    width: 13px;
+    height: 1px;
     background-color: $basic-white;
+    left: 50%;
+    transform: translateX(-50%);
+
+    @media (min-width: $tablet-width) {
+      width: 20px;
+    }
   }
 
-  &--current::after {
+  &--opened::after {
     display: none;
   }
 
@@ -241,7 +247,7 @@
     background-color: $basic-white;
   }
 
-  &--current {
+  &--opened {
     background-color: $button-blue;
     position: relative;
 
