@@ -5,7 +5,7 @@ const faqSubscription = document.querySelector('.faq__content--subscription');
 const faqServices = document.querySelector('.faq__content--services');
 const faqRules = document.querySelector('.faq__content--rules');
 const faq = document.querySelector('.faq');
-const faqButton = faq.querySelectorAll('.faq__button');
+const faqInteractive = faq.querySelectorAll('.faq__item');
 
 faqTab.forEach((element) => {
   element.addEventListener('click', clickHandlerFaq);
@@ -44,19 +44,17 @@ function clickHandlerFaq(evt) {
   }
 }
 
-faqButton.forEach((item) => {
-  item.addEventListener('click', (evt) => {
-    const faqItem = evt.target.parentNode;
-    const faqContent = faqItem.children[1];
-    if (evt.target.className === 'faq__button faq__button--closed') {
-      evt.target.classList.remove('faq__button--closed');
-      evt.target.classList.add('faq__button--opened');
-      faqContent.style.display = 'block';
+faqInteractive.forEach((item) => {
+  item.addEventListener('click', () => {
+
+    if (item.className === 'faq__item faq__item--opened') {
+      item.children[item.children.length - 1].classList.remove('faq__button--opened');
+      item.children[item.children.length - 1].classList.add('faq__button--closed');
+      item.classList.remove('faq__item--opened');
     } else {
-      evt.target.classList.add('faq__button--closed');
-      evt.target.classList.remove('faq__button--opened');
-      faqContent.style.display = 'none';
+      item.children[item.children.length - 1].classList.remove('faq__button--closed');
+      item.children[item.children.length - 1].classList.add('faq__button--opened');
+      item.classList.add('faq__item--opened');
     }
-  }
-  );
+  });
 });

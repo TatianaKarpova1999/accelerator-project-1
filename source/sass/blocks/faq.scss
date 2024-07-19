@@ -155,7 +155,11 @@
     line-height: 20px;
     margin: 0;
     grid-column: 1;
-    display: none;
+    visibility: hidden;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.2s linear;
+    height: 0;
 
     @media (min-width: $tablet-width) {
       font-size: 18px;
@@ -165,6 +169,22 @@
 
   &:last-child {
     border-bottom: 1px solid #74819c;
+  }
+
+  &--opened p {
+    margin-top: 20px;
+    visibility: visible;
+    height: auto;
+    overflow: none;
+    opacity: 1;
+
+    @media (min-width: $tablet-width) {
+      margin-top: 10px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 23px;
+    }
   }
 }
 
@@ -236,14 +256,14 @@
     background-color: $basic-white;
   }
 
-  &:focus {
+  &:focus-visible {
     outline: none;
     background-color: #74819c;
     border: 1px solid $button-blue;
   }
 
-  &:focus::before,
-  &:focus::after {
+  &:focus-visible::before,
+  &:focus-visible::after {
     background-color: $basic-white;
   }
 
