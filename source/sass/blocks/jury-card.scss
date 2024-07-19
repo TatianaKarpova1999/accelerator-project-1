@@ -10,18 +10,21 @@
     max-height: 300px;
   }
 
-  &:hover .jury-card__container {
+  &:hover .jury-card__container,
+  &:focus-visible .jury-card__container {
     z-index: -1;
     position: relative;
     outline: none;
   }
 
-  &:hover .jury-card__name {
+  &:hover .jury-card__name,
+  &:focus-visible .jury-card__name {
     display: none;
     outline: none;
   }
 
-  &:hover .jury-card__info {
+  &:hover .jury-card__info,
+  &:focus-visible .jury-card__info {
     display: flex;
   }
 }
