@@ -604,13 +604,13 @@
             <ul class="form__list">
               <li class="form__item">
                 <label class="form__control">
-                  <input class="form__input" type="text" name="name" placeholder="Имя" required>
+                  <input class="form__input" type="text" name="name" placeholder="Имя" pattern="^[A-Za-zА-Яа-яЁё\s]+$" required>
                   <span class="form__error">Введите имя</span>
                 </label>
               </li>
               <li class="form__item">
                 <label class="form__control">
-                  <input class="form__input" type="tel" name="phone" placeholder="Телефон" required>
+                  <input class="form__input" type="tel" name="phone" placeholder="Телефон" pattern="^[ 0-9]+$" required>
                   <span class="form__error">Введите e-mail</span>
                 </label>
               </li>

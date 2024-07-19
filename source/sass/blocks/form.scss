@@ -1,13 +1,15 @@
 .form {
   position: relative;
 
-  &::before {
-    content: "";
-    position: absolute;
-    background-color: $primary-color;
-    width: 50%;
-    height: 100%;
-    z-index: -1;
+  @media (min-width: $desktop-width) {
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: $primary-color;
+      width: 50%;
+      height: 100%;
+      z-index: -1;
+    }
   }
 }
 
@@ -109,11 +111,11 @@
     color: $basic-white;
   }
 
-  &:hover {
+  &:not(.form__input--error):hover {
     border-color: $basic-white;
   }
 
-  &:focus {
+  &:focus-visible {
     outline: none;
     box-shadow: 0 0 0 1px $basic-white;
     border-bottom: none;
