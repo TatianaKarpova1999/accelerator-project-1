@@ -79,9 +79,27 @@
   align-items: center;
   justify-content: center;
   column-gap: 10px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     column-gap: 14px;
+  }
+}
+
+.price-card__shadow {
+  position: absolute;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 120px;
+  text-align: center;
+  color: rgb(232, 232, 232, 0.48);
+  z-index: -1;
+  top: -47px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 100px;
+    line-height: 150px;
+    top: -57px;
   }
 }
 

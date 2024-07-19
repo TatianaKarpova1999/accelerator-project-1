@@ -32,4 +32,8 @@ function clickHandlerPrice(evt) {
       priceFullDay.innerHTML = '32&nbsp;400';
       break;
   }
+
+  priceTrainer.previousElementSibling.innerHTML = priceTrainer.innerHTML;
+  priceDay.previousElementSibling.innerHTML = priceDay.innerHTML;
+  priceFullDay.previousElementSibling.innerHTML = priceFullDay.innerHTML;
 }
