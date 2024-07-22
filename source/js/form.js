@@ -7,6 +7,9 @@ submitButton.addEventListener('click', () => {
     if(!input.checkValidity()) {
       input.nextElementSibling.style.display = 'block';
       input.classList.add('form__input--error');
+    } else {
+      input.nextElementSibling.style.display = 'none';
+      input.classList.remove('form__input--error');
     }
   });
 });

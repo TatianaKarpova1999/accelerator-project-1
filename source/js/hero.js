@@ -3,7 +3,7 @@ const price = document.querySelector('.price');
 
 button.addEventListener('click', () => {
   price.scrollIntoView({
-    block: 'center',
+    block: 'start',
     behavior: 'smooth',
   });
 });
