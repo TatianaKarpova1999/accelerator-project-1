@@ -19,7 +19,7 @@
     padding: 40px 103px;
     max-width: 1366px;
     grid-template-columns: 130px auto 95px;
-    column-gap: 146px;
+    column-gap: 126px;
   }
 }
 
@@ -42,8 +42,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    column-gap: 82px;
+    column-gap: 74px;
     width: 642px;
+    padding-left: 41px;
   }
 }
 

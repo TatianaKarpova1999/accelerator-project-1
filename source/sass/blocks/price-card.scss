@@ -86,6 +86,10 @@
     column-gap: 14px;
     margin-bottom: 22px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 19px;
+  }
 }
 
 .price-card__shadow {
@@ -143,7 +147,7 @@
   border: none;
 
   @media (min-width: $tablet-width) {
-    padding: 27px;
+    padding: 26px;
     margin-bottom: 10px;
   }
 

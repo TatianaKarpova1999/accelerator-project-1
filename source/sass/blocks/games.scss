@@ -36,10 +36,11 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 168px auto;
-    padding: 60px 80px;
+    padding: 61px 80px;
     padding-bottom: 88px;
     max-width: 500px;
     column-gap: 77px;
+    row-gap: 30px;
   }
 }
 
@@ -93,7 +94,7 @@
   @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 24px;
-    margin-bottom: 10px;
+    margin-bottom: 0;
   }
 }
 
@@ -119,6 +120,7 @@
 
     @media (min-width: $desktop-width) {
       padding-bottom: 5px;
+      margin-bottom: 6px;
     }
   }
 
@@ -166,7 +168,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 25px;
-    padding-bottom: 20px;
+    padding-bottom: 24px;
   }
 
   &:not([aria-disabled="true"]):hover {

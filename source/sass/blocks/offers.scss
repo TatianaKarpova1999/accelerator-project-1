@@ -70,6 +70,10 @@
     @media (min-width: $tablet-width) {
       margin-bottom: 46px;
     }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 39px;
+    }
   }
 
   dt {
@@ -83,6 +87,7 @@
     @media (min-width: $desktop-width) {
       font-size: 26px;
       line-height: 26px;
+      margin-bottom: 20px;
     }
   }
 
@@ -98,6 +103,7 @@
     @media (min-width: $desktop-width) {
       font-size: 70px;
       line-height: 70px;
+      letter-spacing: 0;
     }
   }
 
@@ -117,7 +123,7 @@
     @media (min-width: $desktop-width) {
       font-size: 18px;
       line-height: 24px;
-      margin-bottom: 151px;
+      margin-bottom: 148px;
     }
   }
 }
@@ -130,6 +136,10 @@
   border-bottom: 1px solid #74819c;
   padding-bottom: 5px;
   color: $button-blue;
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 2px;
+  }
 
   &:hover {
     opacity: 0.8;
@@ -218,6 +228,10 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 18px;
   }
 
   h3 {

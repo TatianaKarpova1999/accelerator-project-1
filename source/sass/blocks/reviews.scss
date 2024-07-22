@@ -29,7 +29,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 75px;
+    margin-bottom: 77px;
   }
 }
 
@@ -95,10 +95,18 @@
 
     &--prev {
       margin-left: -17px;
+
+      @media (min-width: $desktop-width) {
+        margin-right: -17px;
+      }
     }
 
     &--next {
       margin-right: -17px;
+
+      @media (min-width: $desktop-width) {
+        margin-left: -17px;
+      }
     }
 
     &--prev::before {
