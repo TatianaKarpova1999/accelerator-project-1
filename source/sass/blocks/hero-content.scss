@@ -63,7 +63,7 @@
   @media (min-width: $tablet-width) {
     max-width: none;
     margin-bottom: 50px;
-    letter-spacing: 0;
+    letter-spacing: 2px;
   }
 }
 
@@ -75,7 +75,7 @@
   grid-row: 1;
   grid-column: 2;
   text-align: right;
-  margin-bottom: 14px;
+  margin-bottom: 9px;
 
   @media (min-width: $desktop-width) {
     margin-bottom: 40px;
@@ -90,6 +90,11 @@
   grid-row: 2;
   margin-top: 64px;
   margin-right: 21px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 80px;
+    margin-right: 26px;
+  }
 }
 
 .hero-content__item {

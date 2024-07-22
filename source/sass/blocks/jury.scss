@@ -24,7 +24,9 @@
   margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 46px;
+    margin-bottom: 48px;
+    font-size: 52px;
+    line-height: 52px;
   }
 }
 
@@ -88,14 +90,14 @@
     }
 
     &--prev {
-      @media (min-width: $desktop-width) {
-        margin-left: -20px;
+      @media (min-width: $tablet-width) {
+        margin-left: -12px;
       }
     }
 
     &--next {
-      @media (min-width: $desktop-width) {
-        margin-right: -20px;
+      @media (min-width: $tablet-width) {
+        margin-right: -12px;
       }
     }
 

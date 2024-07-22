@@ -71,7 +71,7 @@
 
   @media (min-width: $tablet-width) {
     row-gap: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 7px;
   }
 
   @media (min-width: $desktop-width) {
@@ -100,6 +100,7 @@
 .games__info-item {
   display: grid;
   column-gap: 3px;
+  align-items: center;
 
   dt {
     font-family: $secondary-font;

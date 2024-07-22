@@ -59,6 +59,9 @@
 
   @media (min-width: $tablet-width) {
     text-align: center;
+    font-size: 54px;
+    line-height: 54px;
+    margin-bottom: 34px;
   }
 }
 
@@ -150,6 +153,7 @@
   @media (min-width: $tablet-width) {
     max-width: 440px;
     margin-bottom: 10px;
+    padding: 25px;
   }
 
   @media (min-width: $desktop-width) {

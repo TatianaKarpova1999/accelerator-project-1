@@ -12,8 +12,7 @@
     max-width: 768px;
     padding: 45px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    column-gap: 35px;
+    grid-template-columns: 110px 462px 105px;
   }
 
   @media (min-width: $desktop-width) {
@@ -35,9 +34,11 @@
   margin-bottom: 27px;
 
   @media (min-width: $tablet-width) {
-    column-gap: 19px;
-    width: 393px;
+    column-gap: 22px;
+    height: 22px;
     margin-bottom: 0;
+    padding-left: 35px;
+    margin-top: -3px;
   }
 
   @media (min-width: $desktop-width) {

@@ -21,9 +21,9 @@
       background-size: 100%;
       width: 275px;
       height: 328px;
-      transform: rotate(-25deg);
-      bottom: 0;
-      right: -16px;
+      transform: rotate(-30deg);
+      bottom: 11px;
+      right: -15px;
     }
   }
 
@@ -45,7 +45,7 @@
   margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 35px;
+    margin-bottom: 37px;
   }
 }
 
@@ -59,7 +59,7 @@
   @media (min-width: $tablet-width) {
     max-width: 310px;
     margin: 0 auto;
-    margin-bottom: 55px;
+    margin-bottom: 53px;
     column-gap: 44px;
   }
 
