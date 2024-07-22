@@ -58,10 +58,12 @@
   grid-column: 2;
   text-transform: uppercase;
   margin-bottom: 48px;
+  letter-spacing: 1px;
 
   @media (min-width: $tablet-width) {
     max-width: none;
     margin-bottom: 50px;
+    letter-spacing: 0;
   }
 }
 

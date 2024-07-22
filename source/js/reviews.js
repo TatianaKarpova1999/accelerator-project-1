@@ -54,5 +54,3 @@ function updateSlider() {
 }
 
 updateSlider();
-
-

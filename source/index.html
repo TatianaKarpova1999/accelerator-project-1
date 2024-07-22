@@ -284,8 +284,8 @@
         <div class="faq__content faq__content--center">
           <ul class="faq__list">
             <li class="faq__item faq__item--opened">
-              <h3>Как стать членом фитнес-центра?</h3>
-              <p>При первом посещении и покупке абонемента, необходимо заполнить анкету <br> и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.</p>
+              <h3>Как стать членом<br> фитнес-центра?</h3>
+              <p>При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.</p>
               <button class="faq__button faq__button--opened" aria-label="Открыть ответ" type="button"></button>
             </li>
             <li class="faq__item">
@@ -386,9 +386,9 @@
         <h2 class="reviews__title">Отзывы</h2>
         <div class="reviews__container">
           <button class="reviews__button reviews__button--prev" aria-label="Посмотреть предыдущий слайд" type="button"></button>
-          <div class="reviews__slider">
-            <ul class="reviews__content">
-              <li class="reviews__item reviews-card">
+          <div class="reviews__slider swiper">
+            <ul class="reviews__content swiper-wrapper">
+              <li class="reviews__item reviews-card swiper-slide">
                 <picture>
                   <source width="80" height="80" type="image/webp"  media="(min-width: 768px)" srcset="img/comments-tablet-1@1x.webp 1x, img/comments-tablet-1@2x.webp 2x">
                   <source width="68" height="68" type="image/webp" srcset="img/comments-mobile-1@1x.webp 1x, img/comments-mobile-1@2x.webp 2x">
@@ -399,7 +399,7 @@
                 <h3>Анна Орлова</h3>
                 <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
               </li>
-              <li class="reviews__item reviews-card">
+              <li class="reviews__item reviews-card swiper-slide">
                 <picture>
                   <source width="80" height="80" type="image/webp"  media="(min-width: 768px)" srcset="img/comments-tablet-2@1x.webp 1x, img/comments-tablet-2@2x.webp 2x">
                   <source width="68" height="68" type="image/webp" srcset="img/comments-mobile-2@1x.webp 1x, img/comments-mobile-2@2x.webp 2x">
@@ -410,7 +410,7 @@
                 <h3>Анна Орлова</h3>
                 <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажёры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
               </li>
-              <li class="reviews__item reviews-card">
+              <li class="reviews__item reviews-card swiper-slide">
                 <picture>
                   <source width="80" height="80" type="image/webp"  media="(min-width: 768px)" srcset="img/comments-tablet-3@1x.webp 1x, img/comments-tablet-3@2x.webp 2x">
                   <source width="68" height="68" type="image/webp" srcset="img/comments-mobile-3@1x.webp 1x, img/comments-mobile-3@2x.webp 2x">
@@ -538,7 +538,7 @@
     </footer>
 
     <template id="card">
-      <li class="jury__item jury-card">
+      <li class="jury-card">
         <div class="jury-card__container">
           <figure>
             <picture>

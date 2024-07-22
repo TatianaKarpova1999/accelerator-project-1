@@ -1,7 +1,7 @@
 .offers__wrapper {
   max-width: 320px;
   margin: 0 auto;
-  padding: 40px 0;
+  padding: 38px 0;
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
@@ -45,6 +45,7 @@
   align-items: center;
   text-align: center;
   padding: 30px;
+  padding-bottom: 33px;
 
   @media (min-width: $tablet-width) {
     padding: 40px 25px;
@@ -100,7 +101,7 @@
     font-size: 16px;
     line-height: 20px;
     margin: 0;
-    margin-bottom: 28px;
+    margin-bottom: 19px;
 
     @media (min-width: $tablet-width) {
       margin-bottom: 160px;
@@ -201,7 +202,8 @@
   border: 7px solid transparent;
   border-image: linear-gradient(164deg, #d10a42 0%, #00359f 100%);
   border-image-slice: 1;
-  margin-bottom: 30px;
+  margin-bottom: 31px;
+  padding-bottom: 22px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
@@ -230,7 +232,7 @@
     font-size: 14px;
     line-height: 22px;
     margin: 0;
-    margin-bottom: 18px;
+    margin-bottom: 12px;
 
     @media (min-width: $tablet-width) {
       font-size: 16px;

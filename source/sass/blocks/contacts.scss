@@ -1,5 +1,6 @@
 .contacts {
-  padding: 40px 15px;
+  padding: 37px 15px;
+  padding-bottom: 39px;
   max-width: 320px;
   margin: 0 auto;
   box-sizing: border-box;
@@ -26,7 +27,7 @@
   text-align: left;
   color: $primary-color;
   margin: 0;
-  margin-bottom: 42px;
+  margin-bottom: 38px;
 
   @media (min-width: $tablet-width) {
     text-align: center;
@@ -77,6 +78,14 @@
     @media (min-width: $tablet-width) {
       order: 1;
     }
+  }
+
+  &--phone h3{
+    margin-bottom: 6px;
+  }
+
+  &--email h3 {
+    margin-bottom: 6px;
   }
 
   &--email {
