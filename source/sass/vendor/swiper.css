@@ -48,11 +48,11 @@
   width: 260px;
 
   @media (min-width: 768px) {
-    width: 667px;
+    width: 700px;
   }
 
   @media (min-width: 1366px) {
-    width: 1270px;
+    width: 1298px;;
   }
 }
 .swiper-reviews {
@@ -100,6 +100,11 @@
   @media (min-width: 1366px) {
     width: 560px;
   }
+}
+
+.swiper-button-container {
+  width: 50px;
+  height: 50px;
 }
 
 .swiper-android .swiper-slide,

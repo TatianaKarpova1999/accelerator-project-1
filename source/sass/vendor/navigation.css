@@ -81,16 +81,31 @@
   font-variant: initial;
   line-height: 1;
 }
-.swiper-button-prev:after,
-.swiper-rtl .swiper-button-next:after {
+.swiper-button-prev::after,
+.swiper-rtl .swiper-button-next::after {
   content: "";
   mask-image: url("../../img/sprite/arr.svg");
   background-color: #102654;
+  mask-repeat: no-repeat;
   width: 18px;
   height: 34px;
   display: block;
   transform: rotate(180deg);
-  margin-right: 36px;
+  margin-right: 20px;
+  margin-bottom: 5px;
+}
+
+.swiper-button-prev::before,
+.swiper-rtl .swiper-button-next::before {
+  position: absolute;
+  content: "";
+  background-color: transparent;
+  width: 50px;
+  height: 50px;
+  display: block;
+  transform: rotate(180deg);
+  left: 0;
+  border-radius: 50%;
 }
 
 .swiper-button-next,
@@ -98,14 +113,68 @@
   right: var(--swiper-navigation-sides-offset, -10px);
   left: auto;
 }
-.swiper-button-next:after,
-.swiper-rtl .swiper-button-prev:after {
+.swiper-button-next::after,
+.swiper-rtl .swiper-button-prev::after {
   content: "";
   mask-image: url("../../img/sprite/arr.svg");
   background-color: #102654;
+  opacity: 1;
   width: 18px;
   height: 34px;
   display: block;
-  margin-left: 36px;
+  margin-left: 20px;
+  margin-bottom: 5px;
+}
+
+.swiper-button-next::before,
+.swiper-rtl .swiper-button-prev::before {
+  position: absolute;
+  content: "";
+  background-color: transparent;
+  width: 50px;
+  height: 50px;
+  display: block;
+  transform: rotate(180deg);
+  right: 0;
+  border-radius: 50%;
+}
+
+.swiper-button-next:not([aria-disabled="true"]):hover::before,
+.swiper-button-prev:not([aria-disabled="true"]):hover::before {
+  border: 1px solid #102654;
+  background-color: #ffffff;
+}
+
+.swiper-button-next:focus-visible,
+.swiper-button-prev:focus-visible {
+  outline: none;
+}
+
+.swiper-button-next:focus-visible:before,
+.swiper-button-prev:focus-visible:before {
+  border: 1px solid #102654;
+  background-color: #e8e8e8;
+}
+
+.swiper-button-next:not([aria-disabled="true"]):active:before,
+.swiper-button-prev:not([aria-disabled="true"]):active:before {
+  background-color: #102654;
+}
+
+.swiper-button-next:not([aria-disabled="true"]):active:after,
+.swiper-button-prev:not([aria-disabled="true"]):active:after {
+  background-color: #ffffff;
+}
+
+.swiper-button-next[aria-disabled="true"],
+.swiper-button-prev[aria-disabled="true"] {
+  cursor: default;
+  pointer-events: none;
+}
+
+.swiper-button-next[aria-disabled="true"]:after,
+.swiper-button-prev[aria-disabled="true"]:after {
+  opacity: 30%;
+  cursor: default;
 }
 /* Navigation font end */
