@@ -48,10 +48,13 @@
   display: none;
   position: absolute;
   top: 0;
-  padding: 45px 42px;
+  padding: 45px 40px;
   padding-bottom: 51px;
   flex-direction: column;
   align-items: center;
+  background-color: rgba(16, 38, 84, 0.89);
+  height: 100%;
+  box-sizing: border-box;
 }
 
 .jury-card__title {

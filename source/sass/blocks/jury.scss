@@ -38,34 +38,6 @@
   }
 }
 
-.jury__slider {
-  position: relative;
-  width: 260px;
-  margin: 0 auto;
-  overflow: hidden;
-
-  @media (min-width: $tablet-width) {
-    width: 560px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 1160px;
-  }
-}
-
-.jury__list {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-
-  @media (min-width: $tablet-width) {
-    column-gap: 40px;
-    order: 2;
-  }
-}
-
 .jury__button {
   display: none;
 

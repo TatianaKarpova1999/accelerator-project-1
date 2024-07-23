@@ -48,6 +48,10 @@
   margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
     margin-bottom: 20px;
   }
 }
@@ -180,12 +184,13 @@
   @media (min-width: $tablet-width) {
     max-width: 380px;
     margin: 0 auto;
-    gap: 40px;
+    gap: 42px;
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     max-width: 1160px;
+    gap: 40px;
   }
 }

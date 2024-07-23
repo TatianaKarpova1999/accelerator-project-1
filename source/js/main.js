@@ -1,21 +1,41 @@
-// // https://swiperjs.com/get-started#installation
-// import Swiper from './vendor/swiper';
-// import {Navigation} from './vendor/modules';
-// import './swiper/css';
+// https://swiperjs.com/get-started#installation
+import {Navigation} from 'swiper/modules';
+import Swiper from 'swiper';
 import './hero';
-import './jury';
 import './reviews';
 import './about';
 import './price';
 import './faq';
 import './form';
 
+new Swiper('.swiper', {
+  modules: [Navigation],
+  loop: true,
 
-// const reviewSlider = () => {
-//   const reviewSwiper = document.querySelector('.swiper');
-//   const swiper = new Swiper(reviewSwiper, {
-//     modules: [Navigation],
-//   });
-// }
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 40,
+    },
 
-// reviewSlider();
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 230,
+
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    },
+
+    1366: {
+      slidesPerView: 5,
+      spaceBetween: 200,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    }
+  }
+
+});
