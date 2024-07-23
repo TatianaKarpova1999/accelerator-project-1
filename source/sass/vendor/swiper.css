@@ -32,7 +32,8 @@
   margin-right: auto;
   z-index: 1;
 }
-.swiper {
+.swiper,
+.swiper-reviews {
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -52,6 +53,18 @@
 
   @media (min-width: 1366px) {
     width: 1270px;
+  }
+}
+.swiper-reviews {
+  width: 240px;
+  background-color: #ffffff;
+
+  @media (min-width: 768px) {
+    width: 678px;
+  }
+
+  @media (min-width: 1366px) {
+    width: 768px;
   }
 }
 .swiper-vertical > .swiper-wrapper {
@@ -78,6 +91,17 @@
     width: 1160px;
   }
 }
+
+.swiper-wrapper-reviews {
+  @media (min-width: 768px) {
+    width: 500px;
+  }
+
+  @media (min-width: 1366px) {
+    width: 560px;
+  }
+}
+
 .swiper-android .swiper-slide,
 .swiper-ios .swiper-slide,
 .swiper-wrapper {
@@ -91,12 +115,13 @@
 }
 .swiper-slide {
   flex-shrink: 0;
-  width: 100%;
+  width: 100% !important;
   height: 100%;
   position: relative;
   transition-property: transform;
   display: block;
 }
+
 .swiper-slide-invisible-blank {
   visibility: hidden;
 }
