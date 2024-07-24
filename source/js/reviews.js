@@ -14,7 +14,7 @@ new Swiper('.swiper-reviews', {
 
     768: {
       slidesPerView: 1,
-      spaceBetween: -138,
+      spaceBetween: -178,
       allowTouchMove: true,
 
       navigation: {
@@ -25,7 +25,7 @@ new Swiper('.swiper-reviews', {
 
     1366: {
       slidesPerView: 1,
-      spaceBetween: -165,
+      spaceBetween: -240,
       allowTouchMove: false,
       navigation: {
         nextEl: '.swiper-button-next',

@@ -14,7 +14,7 @@ new Swiper('.swiper', {
 
     768: {
       slidesPerView: 3,
-      spaceBetween: 230,
+      spaceBetween: 200,
       allowTouchMove: true,
 
       navigation: {

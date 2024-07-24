@@ -56,16 +56,8 @@
   }
 }
 .swiper-reviews {
-  width: 240px;
-  background-color: #ffffff;
-
-  @media (min-width: 768px) {
-    width: 678px;
-  }
-
-  @media (min-width: 1366px) {
-    width: 768px;
-  }
+  width: 100%;
+  background-color: rgba(28, 51, 116, 0.09);
 }
 .swiper-vertical > .swiper-wrapper {
   flex-direction: column;
