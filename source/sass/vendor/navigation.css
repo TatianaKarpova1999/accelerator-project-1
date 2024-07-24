@@ -187,22 +187,22 @@
 
 .swiper-button-next-reviews::after {
   margin-right: -32px;
-  margin-top: 0;
+  margin-top: 6px;
 }
 
 .swiper-button-prev-reviews::after {
   margin-left: -32px;
-  margin-top: 0;
+  margin-top: 6px;
 }
 
 .swiper-button-next-reviews::before {
   right: 4px;
-  top: 93px;
+  top: 95px;
 }
 
 .swiper-button-prev-reviews::before {
   left: 4px;
-  top: 93px;
+  top: 95px;
 }
 
 @media (min-width: 1366px) {

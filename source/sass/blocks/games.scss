@@ -73,7 +73,7 @@
 
   @media (min-width: $tablet-width) {
     row-gap: 10px;
-    margin-bottom: 7px;
+    margin-bottom: 6px;
   }
 
   @media (min-width: $desktop-width) {
@@ -95,6 +95,10 @@
   @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 24px;
+    margin-bottom: 7px;
+  }
+
+  @media (min-width: $desktop-width) {
     margin-bottom: 0;
   }
 }

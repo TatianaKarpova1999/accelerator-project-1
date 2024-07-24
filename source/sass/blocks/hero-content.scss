@@ -83,6 +83,10 @@
   text-align: right;
   margin-bottom: 14px;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 9px;
+  }
+
   @media (min-width: $desktop-width) {
     margin-bottom: 42px;
   }
