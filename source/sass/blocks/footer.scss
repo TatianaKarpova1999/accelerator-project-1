@@ -42,7 +42,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    column-gap: 74px;
+    column-gap: 75px;
     width: 642px;
     padding-left: 41px;
   }
@@ -61,6 +61,10 @@
 
   @media (min-width: $tablet-width) {
     line-height: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-weight: 300;
   }
 
   &:not(:active):focus {

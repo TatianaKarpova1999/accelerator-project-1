@@ -4,6 +4,7 @@
 
 .faq__wrapper {
   padding: 73px 15px;
+  padding-top: 71px;
   max-width: 320px;
   margin: 0 auto;
   box-sizing: border-box;
@@ -63,8 +64,8 @@
 .faq__tabs {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 9px;
-  margin-bottom: 34px;
+  gap: 10px;
+  margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(4, 1fr);
@@ -84,7 +85,7 @@
   font-size: 16px;
   line-height: 16px;
   color: $primary-color;
-  padding: 15px;
+  padding: 14px;
   background-color: transparent;
   border: 1px solid rgba(16, 38, 84, 0.2);
   cursor: pointer;
@@ -149,6 +150,7 @@
     line-height: 20px;
     color: $primary-color;
     margin: 0;
+    max-width: 200px;
 
     @media (min-width: $tablet-width) {
       font-size: 22px;
@@ -184,8 +186,16 @@
     border-bottom: 1px solid #74819c;
   }
 
+  &:last-child h3 {
+    max-width: 300px;
+  }
+
+  &--opened h3 {
+    margin-bottom: 20px;
+  }
+
   &--opened p {
-    margin-top: 20px;
+    margin: 0;
     visibility: visible;
     height: auto;
     overflow: none;
@@ -209,7 +219,6 @@
   border: 1px solid $button-blue;
   grid-column: 2;
   grid-row: 1;
-  margin-top: 5px;
   position: relative;
   cursor: pointer;
 
@@ -222,7 +231,7 @@
   &--closed::after {
     content: "";
     position: absolute;
-    width: 13px;
+    width: 14px;
     height: 1px;
     background-color: $button-blue;
     left: 50%;
@@ -233,9 +242,13 @@
     }
   }
 
+  &--opened {
+    margin-bottom: 20px;
+  }
+
   &--closed::after {
     transform: rotate(90deg);
-    left: 8px;
+    left: 7px;
 
     @media (min-width: $tablet-width) {
       left: 9.5px;
@@ -245,7 +258,7 @@
   &--opened::before {
     content: "";
     position: absolute;
-    width: 13px;
+    width: 14px;
     height: 1px;
     background-color: $basic-white;
     left: 50%;
