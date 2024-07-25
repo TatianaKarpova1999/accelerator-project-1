@@ -242,10 +242,6 @@
     }
   }
 
-  &--opened {
-    margin-bottom: 20px;
-  }
-
   &--closed::after {
     transform: rotate(90deg);
     left: 7px;
@@ -296,6 +292,7 @@
   &--opened {
     background-color: $button-blue;
     position: relative;
+    margin-bottom: 20px;
 
     &:focus {
       background-color: $button-blue;
