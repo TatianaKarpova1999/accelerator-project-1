@@ -1,5 +1,5 @@
 .about__wrapper {
-  padding-top: 40px;
+  padding-top: 41px;
   max-width: 320px;
   margin: 0 auto;
   box-sizing: border-box;
@@ -32,7 +32,7 @@
     line-height: 22px;
     padding: 0 15px;
     margin: 0;
-    margin-bottom: 36px;
+    margin-bottom: 35px;
 
     @media (min-width: $tablet-width) {
       font-size: 16px;
@@ -63,7 +63,7 @@
   color: $primary-color;
   padding: 0 15px;
   margin: 0;
-  margin-bottom: 12px;
+  margin-bottom: 11px;
 
   @media (min-width: $tablet-width) {
     text-align: center;
@@ -82,7 +82,7 @@
 
   padding: 0 15px;
   margin: 0;
-  margin-bottom: 36px;
+  margin-bottom: 37px;
 
   @media (min-width: $tablet-width) {
     text-align: center;
@@ -97,7 +97,7 @@
 }
 
 .about__image {
-  margin-bottom: 37px;
+  margin-bottom: 36px;
   display: block;
 
   @media (min-width: $tablet-width) {
