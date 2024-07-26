@@ -8,6 +8,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 60px;
+    padding-top: 59px;
     max-width: 768px;
     display: flex;
     flex-direction: column;
@@ -37,7 +38,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 35px;
+    margin-bottom: 36px;
   }
 }
 
@@ -66,7 +67,7 @@
 
   @media (min-width: $desktop-width) {
     column-gap: 108px;
-    row-gap: 16px;
+    row-gap: 14px;
 
     &::before {
       content: "";
@@ -103,6 +104,10 @@
     @media (min-width: $tablet-width) {
       margin-bottom: 0;
     }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 2px;
+    }
   }
 
   &--email h3 {
@@ -116,6 +121,12 @@
   &--email {
     @media (min-width: $tablet-width) {
       order: 2;
+    }
+  }
+
+  &--address h3 {
+    @media (min-width: $desktop-width) {
+      margin-bottom: 6px;
     }
   }
 }
