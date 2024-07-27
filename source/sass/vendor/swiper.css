@@ -57,7 +57,7 @@
 }
 .swiper-reviews {
   width: 100%;
-  background-color: rgba(28, 51, 116, 0.09);
+  background-color: #ffffff;
 }
 .swiper-vertical > .swiper-wrapper {
   flex-direction: column;

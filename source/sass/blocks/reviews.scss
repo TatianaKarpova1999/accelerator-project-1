@@ -15,31 +15,6 @@
     padding: 100px 103px;
     max-width: 1366px;
   }
-
-  &::before {
-    content: "";
-    position: absolute;
-    width: 240px;
-    height: 329px;
-    background-color: transparent;
-    box-shadow: 0 0 40px 0 rgba(28, 51, 116, 0.2);
-    top: 110px;
-
-    @media (min-width: $tablet-width) {
-      width: 500px;
-      height: 242px;
-      left: 50%;
-      transform: translateX(-50%);
-      top: 149px;
-      z-index: 2;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 560px;
-      height: 257px;
-      top: 231px;
-    }
-  }
 }
 
 .reviews__title {
