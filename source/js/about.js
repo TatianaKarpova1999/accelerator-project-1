@@ -17,4 +17,3 @@ function playVideo () {
   button.style.display = 'none';
   video.style.display = 'block';
 }
-

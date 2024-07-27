@@ -1,5 +1,5 @@
-import {Navigation} from 'swiper/modules';
-import Swiper from 'swiper';
+import {Navigation} from './vendor/swiper/modules';
+import Swiper from './vendor/swiper/swiper';
 
 new Swiper('.swiper-reviews', {
   modules: [Navigation],

@@ -5,4 +5,3 @@ import './price';
 import './faq';
 import './form';
 import './jury';
-
