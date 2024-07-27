@@ -39,17 +39,21 @@
   font-size: 22px;
   line-height: 22px;
   color: $basic-white;
-  margin-left: auto;
   text-decoration: none;
   grid-column: 2;
+  max-width: 149px;
+  margin-left: -4px;
 
   @media (min-width: $tablet-width) {
+    margin-left: auto;
     font-size: 24px;
     line-height: 24px;
+    max-width: 162px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 26px;
     line-height: 26px;
+    max-width: 190px;
   }
 }
