@@ -80,7 +80,7 @@
 
   @media (min-width: $desktop-width) {
     column-gap: 44px;
-    max-width: 345px;
+    min-width: 360px;
   }
 
   dl {
@@ -212,6 +212,7 @@
       grid-column: 2;
       grid-row: 1/3;
       padding: 59px 40px;
+      padding-bottom: 58px;
       max-width: 360px;
     }
   }
@@ -253,10 +254,25 @@
     }
   }
 
-
   &--comfort dt,
   &--experience dt {
     margin-top: 3px;
+
+    @media (min-width: $desktop-width) {
+      margin-top: 2px;
+    }
+  }
+
+  &--parking {
+    @media (min-width: $desktop-width) {
+      padding-bottom: 48px;
+    }
+  }
+
+  &--experience {
+    @media (min-width: $desktop-width) {
+      column-gap: 81px;
+    }
   }
 }
 
