@@ -69,6 +69,7 @@
   column-gap: 45px;
   position: relative;
   margin-bottom: 39px;
+  row-gap: 30px;
 
   @media (min-width: $tablet-width) {
     max-width: 310px;
@@ -198,6 +199,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     max-width: 1160px;
+    align-items: start;
     gap: 40px;
   }
 }

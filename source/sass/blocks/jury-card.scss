@@ -6,7 +6,7 @@
 
   figure {
     margin: 0;
-    max-height: 300px;
+    height: 100%;
   }
 
   &:hover .jury-card__container,
@@ -46,8 +46,7 @@
 
 .jury-card__info {
   display: none;
-  position: absolute;
-  top: 0;
+  position: relative;
   padding: 45px 40px;
   padding-bottom: 51px;
   flex-direction: column;
@@ -55,6 +54,8 @@
   background-color: rgba(16, 38, 84, 0.89);
   height: 100%;
   box-sizing: border-box;
+  margin-top: -300px;
+  min-height: 300px;
 }
 
 .jury-card__title {
@@ -96,4 +97,9 @@
   &:last-child {
     margin-bottom: 0;
   }
+}
+
+.jury-card__image {
+  display: block;
+  height: 100%;
 }

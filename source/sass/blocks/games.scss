@@ -122,16 +122,19 @@
     border-bottom: 1px solid $basic-white;
     padding-bottom: 2px;
     margin-bottom: 2px;
+    max-width: 70px;
 
     @media (min-width: $tablet-width) {
       font-size: 18px;
       line-height: 24px;
       padding-bottom: 1px;
+      max-width: 109px;
     }
 
     @media (min-width: $desktop-width) {
       padding-bottom: 5px;
       margin-bottom: 6px;
+      max-width: 130px;
     }
   }
 
@@ -209,6 +212,8 @@
 
 .games__photo {
   display: block;
+  height: 100%;
+  object-fit: cover;
 }
 
 .games__group {
